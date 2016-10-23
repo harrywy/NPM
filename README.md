@@ -60,5 +60,9 @@ I use the co-occurrence of word and paper in the whole corpus as weight.
 
 Should you have more questions, please email me at gmail start with harrywy 
 
+# License
+All codes are under Penn State ownership and is licensed under a [reative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). 
+
+![Alt](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
 
