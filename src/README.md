@@ -1,8 +1,8 @@
 #Learning:
 
-'''
+```
 ./citation-model-MT-inverse ../data_tokenized/vec_tokenized_10_600_neg_100.txt ../data_tokenized/df_title ../data_tokenized/context_adj_noun ../data_tokenized/title new_ctm/ctm.model 600_inverse
-'''
+```
 
 ## File standards:
 
@@ -52,11 +52,11 @@ name of outfile for example:
 
 #Create indexing p(word|paper):
 
-'''
+```
 ./index-compute 600_w2v.word.60 600_w2v.paper.60.cleaned test_voc ../data_tokenized/word.voc ../data_tokenized/paper.freq
 ./index-soft 600_w2v.word.60 600.paper.60.cleaned test_voc ../data_tokenized/word.voc ../data_tokenized/paper.freq
 ./index-soft-bayes 600_w2v.word.60 600.paper.60.cleaned test_voc ../data_tokenized/word.voc ../data_tokenized/paper.freq
-'''
+```
 
 600_w2v.word is word embedding
 600.paper.60 is paper embeding 60 is iteration 
