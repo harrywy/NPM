@@ -13,8 +13,10 @@ This is the output from word2vec, use citation context to train the word2vec mod
 
 File should looks like this:
 
-num_of_word dim_of_embedding
-f1 f2 ... f_n
+num_of_word dim_of_embedding\n
+
+f1 f2 ... f_n\n
+
 ...
 
 
@@ -23,7 +25,9 @@ f1 f2 ... f_n
 This is the df file for words appear in citation context.
 
 File should looks like:
-word_0 df_0
+
+word_0 df_0\n
+
 ...
 
 * argv[3] = traindata
@@ -31,7 +35,9 @@ word_0 df_0
 this is the citation context and cited document pair. 
 
 File should looks like:
+
 citing_document_id\tcited_document_id\tw_0 w_1 w_2 w_3 ... w_m\n
+
 ...
 
 * argv[4] = title
@@ -39,13 +45,17 @@ citing_document_id\tcited_document_id\tw_0 w_1 w_2 w_3 ... w_m\n
 This is deprecated, but you can test with title information.
 
 File should looks like:
+
 cited_document_id w_0 w_1 w_2 ... w_n\n
 
 * argv[5] = ctm file
 
-This is result of citation translation model.
+This is result of citation translation model:
+
 word_0 document_id_0 translation_probability\n
+
 ...
+
 or just use normalized co-occurrence 
 
 This helps training
