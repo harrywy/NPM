@@ -60,19 +60,23 @@ or just use normalized co-occurrence
 
 here is a example of how co-occurrences of word and paper are calculated:
 
-citation context                         cited document 
-w_1 w_2 w_2 w_3                             p_1
-w_2 w_4                                     p_2
-w_2 w_5                                     p_3
+|citation context| cited document|
+| -------------  |:-------------:|
+|w_1 w_2 w_2 w_3 |            p_1|
+|w_2 w_4         |            p_2|
+|w_2 w_5         |            p_3|
 
 co-occurrences table:
-w_1  p_1   1.0
-w_2  p_1   0.5
-w_2  p_2   0.25
-w_2  p_3   0.25
-w_3  p_1   1.0
-w_4  p_2   1.0
-w_5  p_3   1.0
+
+|word|paper|pr|
+|--- | --- | ---|
+|w_1 | p_1   |1.0|
+|w_2 | p_1   |0.5|
+|w_2 | p_2   |0.25|
+|w_2 | p_3   |0.25|
+|w_3 | p_1   |1.0|
+|w_4 | p_2   |1.0|
+|w_5 | p_3   |1.0|
 
 This helps training
 
