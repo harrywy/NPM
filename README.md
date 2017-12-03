@@ -2,7 +2,7 @@
 
 Experiment code for the AAAI'15 paper: 
 
-A Neural Probabilistic Model for Context Based Citation Recommendation
+[A Neural Probabilistic Model for Context Based Citation Recommendation](http://www.personal.psu.edu/wzh112/publications/aaai2015.pdf)
 
 Please note that the code is experimental, so it contains two main part:
 
@@ -39,23 +39,24 @@ The shared data is a SQL dump of citeseerx database with 3 tables: citations, ci
 * After the database is imported:
 These are the steps that may help you:
   * create new data format, remove citations (surrounded by -=-  and =-=) :
+  ```
   CitationContext      Cluster  (cited paper) 
-
+  ```
   * learn word embedding  from citation context 
 
   * learn paper embedding  from citation context (initial paper embedding)
 
-learn word embedding and paper embedding simultaneously. (when learn paper embedding only use adj. and noun. words in citation context )   
+  *  learn word embedding and paper embedding simultaneously. 
+      * when learning paper embedding only use adj. and noun. words in citation context 
+      * when learning paper embeddings, I assigned a normalized weight for each noun and adj word in an context
 
-when learning paper embeddings, I assigned a normalized weight for each noun and adj word in an context
-
-For example,
-For one pair of citation and citation context:
-
-w_1, w_2, ... , w_{n-1}, w_{n}              p_i
-
-when learning embedding of paper p_i , word w_1 ,w_2... w_{n} has different learning weight.
-I use the co-occurrence of word and paper in the whole corpus as weight. 
+        For example, 
+        For one pair of citation and citation context:
+        ```
+        w_1, w_2, ... , w_{n-1}, w_{n}              p_i
+        ```
+        when learning embedding of paper ```p_i``` , ```word w_1 ,w_2... w_{n}``` has different learning weight.
+        I use the co-occurrence of word and paper in the whole corpus as weight. 
 
 
 Should you have more questions, please email me at gmail start with harrywy 
